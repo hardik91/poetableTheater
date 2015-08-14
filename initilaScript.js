@@ -1,4 +1,4 @@
-gitHubURL = "https://raw.githubusercontent.com/hardik91/portableTheater/master";
+gitHubURL = "https://rawgit.com/hardik91/portableTheater/master";
 var jq = document.createElement('script');
 addLibrary(jq ,"https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js");
 var updateHTMLJS = document.createElement('script');
