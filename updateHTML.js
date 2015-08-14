@@ -18,7 +18,7 @@ function getSubtitleDiv(){
 	return '<div id="videoSubtitle" class="srt" data-video="videoPlayer" data-srt=""/>';
 }
 function createVideoPlayer() {
-    var videoPlayerHTML = "<video poster='http://localhost:8000/javascripts/ajax_loader.gif' id='videoPlayer' autoplay controls src=''>";
+    var videoPlayerHTML = "<video poster='"+gitHubURL+"'/img/ajax_loader.gif' id='videoPlayer' autoplay controls src=''>";
     var historyHTML = createHistoryHTML();
     var containerHTML = "<div style='margin-bottom: 100px;' class='col-md-12'> <div class='col-md-2'>" 
     					+ historyHTML + 

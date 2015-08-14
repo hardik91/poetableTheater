@@ -1,7 +1,7 @@
 var jq = document.createElement('script');
 addLibrary(jq ,"https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js");
 var updateHTMLJS = document.createElement('script');
-addLibrary(updateHTMLJS,"http://localhost:8000/javascripts/updateHTML.js")
+addLibrary(updateHTMLJS,gitHubURL+"/updateHTML.js")
 /*var subtielJS = document.createElement('script');
 addLibrary(subtielJS,"http://localhost:8000/javascripts/jquery.srt.js")*/
 setTimeout(function(){
@@ -17,6 +17,8 @@ setTimeout(function(){
 	createPlaylist();
 	createVideoPlayer();
 },1000)
+
+gitHubURL = "https://raw.githubusercontent.com/hardik91/portableTheater/master";
 
 function addLibrary(element,url){
 	element.src = url;
