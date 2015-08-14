@@ -1,3 +1,4 @@
+gitHubURL = "https://raw.githubusercontent.com/hardik91/portableTheater/master";
 var jq = document.createElement('script');
 addLibrary(jq ,"https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js");
 var updateHTMLJS = document.createElement('script');
@@ -16,9 +17,7 @@ setTimeout(function(){
     document.getElementsByTagName('head')[0].appendChild(bootstrap);
 	createPlaylist();
 	createVideoPlayer();
-},1000)
-
-gitHubURL = "https://raw.githubusercontent.com/hardik91/portableTheater/master";
+},1000);
 
 function addLibrary(element,url){
 	element.src = url;
