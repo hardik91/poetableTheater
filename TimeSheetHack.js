@@ -1,6 +1,6 @@
 var iframes = $('.main_content').children()[1]; //target iFrame
 var iBody = $($(iframes).contents());
-var buttonsIds = [];
+var buttonIds = [];
 //days index 2,3,4,5,6
 for(var i = 2;i < 7 ; i++){
   var widget = iBody.find('.widgetwrapper')[i];
@@ -9,26 +9,9 @@ for(var i = 2;i < 7 ; i++){
   iBody.find("input#"+matchRateId).attr('value','Regular Pay');
   iBody.find("div#wrapper_widget_day_"+dayId).find('tr#trStartEnd').show();
   iBody.find("div#wrapper_widget_day_"+dayId).find('tr#trBreak').show();
-  
-  setTimeout(function(){
-    $(iBody.find("input#widget_day_"+dayId+"_starttime")[0]).trigger('focus');
-    iBody.find('div#ui-timepicker-div').show();
-    iBody.find('table tr [data-hour="17"] a').removeClass('ui-state-active');
-    iBody.find('table tr [data-minute="30"] a').removeClass('ui-state-active');
-    iBody.find('table tr [data-hour="9"] a').addClass('ui-state-active');
-    iBody.find('table tr [data-minute="00"] a').addClass('ui-state-active');
-    iBody.find('div#ui-timepicker-div').show();
-  },100);
-
-  // $(iBody.find("input#widget_day_"+dayId+"_endtime")[0]).trigger('focus');
-  // iBody.find('div#ui-timepicker-div').show();
-  // iBody.find('table tr [data-hour="9"] a').removeClass('ui-state-active');
-  // iBody.find('table tr [data-minute="00"] a').removeClass('ui-state-active');
-  // iBody.find('table tr [data-hour="17"] a').addClass('ui-state-active');
-  // iBody.find('table tr [data-minute="30"] a').addClass('ui-state-active');
-
-  //iBody.find("input#widget_day_"+dayId+"_endtime").val('5:30 PM');
-  buttonsIds.push("button#widget_day_"+dayId+"_btnsaveadd");
+  iBody.find("input#widget_day_"+dayId+"_starttime").val('09:00');
+  iBody.find("input#widget_day_"+dayId+"_endtime").val('17:30');
+  iBody.find("button#widget_day_"+dayId+"_btnsaveadd")[0].click();
 }
 
 setTimeout(function(){
