@@ -11,5 +11,5 @@ for(var i = 2;i < 7 ; i++){
   iBody.find("div#wrapper_widget_day_"+dayId).find('tr#trBreak').show();
   iBody.find("input#widget_day_"+dayId+"_starttime").val('09:00');
   iBody.find("input#widget_day_"+dayId+"_endtime").val('17:30');
-  iBody.find("button#widget_day_"+dayId+"_btnsaveadd")[0].trigger('click');
+  iBody.find("button#widget_day_"+dayId+"_btnsaveadd")[0].click();
 }
