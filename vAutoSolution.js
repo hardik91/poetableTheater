@@ -32,7 +32,7 @@ function processString(input) {
       word_count++;
     }
   }
-  return console.log(formatted_words.join(''));
+  console.log(formatted_words.join(''));
 };
 
 // ---
