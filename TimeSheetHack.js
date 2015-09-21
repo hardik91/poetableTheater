@@ -16,6 +16,7 @@ for(var i = 2;i < 7 ; i++){
   iBody.find("input#widget_day_"+dayId+"_starttime").val('9:00 AM');
   iBody.find("input#widget_day_"+dayId+"endtime").timepicker('setTime','5:30 PM')
   iBody.find("input#widget_day_"+dayId+"_endtime").val('5:30 PM');
+  buttonIds.push("button#widget_day_"+dayId+"_btnsaveadd")
 }
 
 setTimeout(function(){
