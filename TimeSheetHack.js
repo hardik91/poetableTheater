@@ -20,9 +20,9 @@ for(var i = 2;i < 7 ; i++){
 }
 
 setTimeout(function(){
-  for(var index in buttonsIds){
+  for(var index in buttonIds){
     if(typeof index != undefined){
-      var id = buttonsIds[index];
+      var id = buttonIds[index];
       iBody.find(id)[0].click();
     }
   }
