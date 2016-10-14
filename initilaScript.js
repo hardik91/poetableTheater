@@ -17,7 +17,7 @@ setTimeout(function(){
     document.getElementsByTagName('head')[0].appendChild(bootstrap);
 	createPlaylist();
 	createVideoPlayer();
-},1000);
+},2000);
 
 function addLibrary(element,url){
 	element.src = url;
